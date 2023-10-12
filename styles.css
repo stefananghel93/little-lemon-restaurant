@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #edefee;
+    font-family: serif, sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100vh;
+}
+
+h1{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+
+}
+
+h2{
+    font-size: 2rem;
+
+}
+
+header > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    background-color: #474747;
+    padding: 0.1rem;
+    border-radius: 0.7rem;
+    margin-top: 2rem;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0.7rem;
+    
+}
+
+nav li:hover{
+    transform: scale(1.5);
+    transition: ease 0.5;
+}
+
+li a{
+    text-decoration: none;
+    color: #edefee;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+section{
+    margin-top: 2rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+article{
+    flex:1;
+}
+
+article:hover{
+    transform: scale(1.05);
+    transition:  ease 0.5s;
+    box-shadow: 1px 1px 50px #eaeaea
+}
+
+.first article{
+    background-image: url(./images/pizza.avif);
+    background-size:cover;
+    background-position-y: -100px;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    color: #edefee;
+    padding-bottom: 2rem;
+    width: 100%;
+
+}
+
+.first p{
+    width: 60%;
+    font-weight: 700;
+}
+
+.second article{
+    background-color: bisque;
+    margin-right:0.8rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+.second :last-of-type{
+    margin-right: 0;
+}
+.second img{
+    object-fit: cover;
+    width: 300px;
+    height: 250px;
+    padding-top: 3rem;
+}
+
+.second p{
+    padding-top: 1.5rem;
+    line-height: 1.5rem;
+
+}
+
+button{
+    padding:1rem;
+    margin-top: 4rem;
+    background-color: #474747;
+    border:0;
+    border-radius: 0.7rem;
+
+}
+
+button:hover{
+    background-color: #02a252;
+    transform: scale(1.05);
+    cursor: grab;
+}
+
+button a{
+    text-decoration: none;
+    color:#edefee;
+    font-size: 1rem;
+}
+
+.opening div p{
+    padding-top: 0;
+}
+
+.opening div{
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+
+
+footer{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+footer div{
+    flex:1;
+}
+
+footer p {
+    border-top: 1px solid #474747;
+    font-size: 0.7rem;
+    text-align: end;
+}
+
+/* Responsivness */
+
+@media(max-width:1135px){
+    .opening {
+        margin-top: .8rem;
+    }
+}
+
+@media(max-width:800px){
+    .second {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        width:100%
+    }
+}
